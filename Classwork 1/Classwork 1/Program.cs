@@ -12,19 +12,46 @@ namespace Classwork_1
             double amount_azn_ = Int32.Parse(Console.ReadLine());
 
 
-            double azn_to_usd_ = amount_azn_ / 1.70;
-            double azn_to_eur_ = amount_azn_ / 1.81;
-            double azn_to_rub_ = amount_azn_ / 0.023;
+            if (amount_azn_ >= 25000)
+            {
+                Console.WriteLine("There are not that many funds in the bank");
+            }
+            else
+            {
+
+                if (amount_azn_ >= 1000)
+                {
+                    Console.WriteLine("Plase write you full name : ");
+                    string full_name_ = Console.ReadLine();
 
 
-            Console.WriteLine("United States Dollar(USD) : ");
-            Console.WriteLine(azn_to_usd_);
+                    double currencydollar = 1.70;
+                    double currencyeur = 1.81;
+                    double currencyrub = 0.023;
 
-            Console.WriteLine("Euro (EUR) : ");
-            Console.WriteLine(azn_to_eur_);
 
-            Console.WriteLine("Russian ruble (RUB) : ");
-            Console.WriteLine(azn_to_rub_);
+
+                    double azn_to_usd_ = amount_azn_ / currencydollar;
+                    double azn_to_eur_ = amount_azn_ / currencyeur;
+                    double azn_to_rub_ = amount_azn_ / currencyrub;
+
+
+                    Console.WriteLine("United States Dollar(USD) : ");
+                    Console.WriteLine(azn_to_usd_);
+
+                    Console.WriteLine("Euro (EUR) : ");
+                    Console.WriteLine(azn_to_eur_);
+
+                    Console.WriteLine("Russian ruble (RUB) : ");
+                    Console.WriteLine(azn_to_rub_);
+                }
+                else
+                {
+                    Console.WriteLine("Sorry we can not translate that.");
+                }
+
+            }
+
 
             //----------------------------TASK_TWO-------------------------
 
@@ -53,7 +80,7 @@ namespace Classwork_1
             Console.Write("Price per one ($) : ");
             double first_shoe_price_ = Int32.Parse(Console.ReadLine());
             Console.Write("Price of all together($) :");
-            double first_total_ = first_shoe_count_  * first_shoe_price_;
+            double first_total_ = first_shoe_count_ * first_shoe_price_;
             Console.WriteLine(first_total_);
 
 
