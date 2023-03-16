@@ -1,121 +1,292 @@
-﻿using System.Diagnostics;
+﻿using System.Runtime.InteropServices;
 
-namespace Classwork_1
+namespace ConsoleApp1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //----------------------------TASK_ONE-------------------------
+            //task 1
+
+            //string name = Console.ReadLine()!;
+
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    char letters = name[i];
+            //    Console.WriteLine(letters);
+            //}
+
+            //task 2
+
+            //char[] numbers = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            //string name = Console.ReadLine();
+            //bool check = false;
+
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    for (int j = 0; j < name.Length; j++)
+            //    {
+            //        if (name[i] == numbers[j])
+            //        {
+            //            check = true;
+            //            break;
+            //        }
+            //    }
+            //    if (check)
+            //    {
+            //        Console.WriteLine("Error");
+            //        break;
+            //    }
+            //}
+
+            //if (!check) 
+            //{
+            //    for(int i = 0;i < name.Length;i++)
+            //    {
+            //        Console.WriteLine(name[i]);
+            //    }
+            //}
+
+            //task 3
+
+            //char[] uppercaseLetters = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+            //                            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+            //char[] lowerLetters = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+            //                        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+            //string name = Console.ReadLine()!;
+            //bool check = false;
+
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    for (int j = 0; j < name.Length; j++)
+            //    {
+            //        if (name[i] == lowerLetters[j] || name[i] == uppercaseLetters[j])
+            //        {
+            //            check = true;
+            //            break;
+            //        }
+            //    }
+            //    if (check)
+            //    {
+            //        Console.WriteLine("Error");
+            //        break;
+            //    }
+            //}
+
+            //if (!check)
+            //{
+            //    for (int i = 0; i < name.Length; i++)
+            //    {
+            //        Console.WriteLine(name[i]);
+            //    }
+            //}
+
+            //task 4
+
+            //Console.Write("Pls write something : ");
+            //string smthng = Console.ReadLine()!;
 
 
-            Console.WriteLine("Plase write you full name : ");
-            string full_name_ = Console.ReadLine();
+            //for (int i = smthng.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(smthng[i]);
+            //}
 
-            Console.WriteLine("Amount (AZN) : ");
-            double amount_azn_ = Int32.Parse(Console.ReadLine());
+            //task 5
 
-            Console.WriteLine("How many currency will be used : ");
-            int currencyCount = int.Parse(Console.ReadLine());
+            //Console.Write("Pls write something : ");
+            //string name = Console.ReadLine()!;
+            //string word = "";
 
-            while (currencyCount > 0)
-            {
-                Console.WriteLine("Please enter the currency : ");
-                double currency = double.Parse(Console.ReadLine());
-                double aznTo = amount_azn_ / currency;
-                Console.WriteLine();
-                Console.WriteLine("Result : ");
-                Console.WriteLine(aznTo);
-                currencyCount--;
-            }
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    if (name[i] == ' ' || i == name.Length - 1)
+            //    {
+            //        Console.WriteLine(word);
+            //        word = "";
+            //    }
+            //    else
+            //    {
+            //        word += name[i];
+            //    }
+            //}
 
-            //----------------------------TASK_TWO-------------------------
+            //task 6
 
-            Console.WriteLine("Budget : ");
-            double budget = double.Parse(Console.ReadLine());
-            Console.WriteLine("How many Ministry do you need : ");
-            int ministryCount = int.Parse(Console.ReadLine());
+            //Console.Write("Pls write your number : ");
+            //string name = Console.ReadLine()!;
 
-            while (ministryCount > 0)
-            {
+            //for (int i = name.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(name[i]);
+            //}
 
-                Console.WriteLine("Please write you ministry : ");
-                string ministry = Console.ReadLine();
+            //task 7
 
-                Console.WriteLine("What percentage will go : ");
-                double percentage = double.Parse(Console.ReadLine());
-                double ministryBudget = budget * percentage / 100;
+            //Console.Write("Pls write your number : ");
+            //string name = Console.ReadLine()!;
 
-                Console.WriteLine(ministry + " : " + ministryBudget);
-                ministryCount--;
-                budget = budget - ministryBudget;
-            }
-            Console.WriteLine("Budget : " + budget);
+            //string x = "";
+            //int length = name.Length;
 
-            //----------------------------TASK_THREE-------------------------
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    if (name[i] == name[length - 1 - i])
+            //    {
+            //        x += name[i];
+            //    }
+            //}
 
-            Console.WriteLine("How many Company do you need : ");
-            int companyCount = int.Parse(Console.ReadLine());
-            decimal resulttotal = 0;
+            //if (name == x)
+            //{
+            //    Console.WriteLine("Polidrom number : " + x);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This number is not polidrom!");
+            //}
 
-            while (companyCount > 0)
-            {
-                Console.Write("Company : ");
-                string shoe = Console.ReadLine();
+            //task 8
 
-                Console.Write("Number of shoes : ");
-                decimal shoeCount = 0;
+            //int x = 0;
 
-                while (true)
-                {
-                    Console.Write("Number of shoes : ");
-                    shoeCount = decimal.Parse(Console.ReadLine());
+            //Console.Write("Pls write something : ");
+            //string name = Console.ReadLine()!;
 
-                    if (shoeCount > 0 && shoeCount < 10)
-                    {
-                        break;
-                    }
-                }
+            //Console.WriteLine();
 
-                decimal shoePrice = 0;
+            //Console.Write("Which character do you want : ");
+            //char search = char.Parse(Console.ReadLine()!);
 
-                while (true)
-                {
-                    Console.WriteLine("Price per one ($) : ");
-                    shoePrice = decimal.Parse(Console.ReadLine());
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    if (search == name[i])
+            //    {
+            //        x++;
+            //    }
+            //}
 
-                    if (shoePrice > 50 && shoePrice < 500)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("The price should be between 50 and 500!");
-                    }
-                }
+            //Console.Write("Your search count : ");
+            //Console.WriteLine(x);
 
-                Console.Write("Total Price ($) : ");
-                decimal total = shoeCount * shoePrice;
+            //task 9
 
-                Console.WriteLine(shoeCount * shoePrice);
+            //Console.Write("Pls write your number : ");
+            //string name = Console.ReadLine()!;
 
-                Console.WriteLine();
-                Console.WriteLine();
-                companyCount--;
-                resulttotal = resulttotal + total;
-            }
-            Console.WriteLine();
-            Console.WriteLine("Price of all together($) : ");
-            Console.WriteLine(resulttotal);
+            //string word = "";
+            //int length = name.Length;
 
-            if (companyCount >= 5)
-            {
-                resulttotal = resulttotal * 15 / 100;
-            }
-            else if (companyCount >= 10)
-            {
-                resulttotal = resulttotal * 25 / 100;
-            }
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    if (name[i] != ' ')
+            //    {
+            //        word += name[i];
+            //    }
+            //}
+            //Console.WriteLine(word);
+
+            //task 10
+
+            //Console.Write("Pls write something : ");
+            //string name = Console.ReadLine()!;
+
+            //Console.WriteLine();
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    Console.WriteLine(i + "." + name[i]);
+            //}
+            //Console.WriteLine();
+            //Console.Write("Start Point : ");
+            //int startIDX = int.Parse(Console.ReadLine()!) - 1;
+            //Console.Write("Stop Point : ");
+            //int stopIDX = int.Parse(Console.ReadLine()!) - 1;
+
+            //for (int i = startIDX; i < stopIDX; i++)
+            //{
+            //    Console.WriteLine(name[i]);
+            //}
+
+            //task 11
+
+            //char[] uppercaseLetters = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+            //                            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+
+            //Console.Write("Pls write something : ");
+            //string name = Console.ReadLine()!;
+            //Console.WriteLine();
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    for (int k = 0; k < uppercaseLetters.Length; k++)
+            //    {
+
+            //        if (i == 0 && name[i] != uppercaseLetters[i])
+            //        {
+            //            Console.WriteLine("Error");
+            //            break;
+            //        }
+            //        else if (i != 0 && name[i] == uppercaseLetters[i])
+            //        {
+            //            Console.WriteLine("Error");
+            //            break;
+            //        }
+            //    }
+            //}
+
+            //task 12
+
+            //char[] numbers = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+            //Console.Write("Pls write your number : ");
+            //string name = Console.ReadLine()!;
+
+            //string word = "";
+
+            ////Iterate over name characters
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    bool isNumber = false;
+
+            //    //iterate over numbers
+            //    for (int j = 0; j < numbers.Length; j++)
+            //    {
+            //        if (name[i] == numbers[j])
+            //        {
+            //            isNumber = true;
+            //            break;
+            //        }
+            //    }
+
+            //    if (!isNumber) 
+            //    {
+            //        word += name[i]; 
+            //    }
+            //}
+
+            //Console.WriteLine(word);
+
+            //task 13
+
+            //Console.Write("Pls write your number : ");
+            //string name = Console.ReadLine()!;
+
+            //if (name.Length > 4 && name[0] == '+' && name[1] == '9' && name[2] == '9' && name[3] == '4')
+            //{
+            //    Console.WriteLine(name);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Error");
+            //}
+
+            //task 14
+
+            //Console.WriteLine("Write your first word : ");
+            //string firstWord = Console.ReadLine()!;
+
+            //Console.WriteLine("Write your second word : ");
+            //string secondWord = Console.ReadLine()!;
+
         }
     }
 }
