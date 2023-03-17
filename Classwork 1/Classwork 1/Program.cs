@@ -287,6 +287,52 @@ namespace ConsoleApp1
             //Console.WriteLine("Write your second word : ");
             //string secondWord = Console.ReadLine()!;
 
+            //string x = "";
+
+            //for (int i = 0; i < secondWord.Length; i++)
+            //{
+            //    for (int j = 0; j < firstWord.Length; j++)
+            //    {
+            //        if (secondWord[i] == firstWord[j])
+            //        {
+            //            x += secondWord[i];
+            //            break;
+            //        }
+            //    }
+            //}
+
+            //if (x == secondWord)
+            //{
+            //    Console.WriteLine("Okay");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not Okay");
+            //}
+
+            //Task lab.
+
+            //Console.Write("Write your first number : ");
+            //decimal firstNumber = decimal.Parse(Console.ReadLine()!);
+
+            //Console.Write("Write your second number : ");
+            //decimal secondNumber = decimal.Parse(Console.ReadLine()!); 
+
+            //decimal total = 0;
+
+            //if (firstNumber < 0)
+            //{
+            //    firstNumber = -firstNumber;
+            //    secondNumber = -secondNumber;
+            //}
+
+            //for (int i = 0; i < firstNumber; i++)
+            //{
+            //    total += secondNumber;
+            //}
+
+            //Console.Write("This is total : ");
+            //Console.WriteLine(total);
         }
     }
 }
